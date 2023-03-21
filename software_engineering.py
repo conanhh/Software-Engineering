@@ -1,3 +1,5 @@
+# This program constitutes a simplified password encoder/decoder.
+
 def encode(Password):
     EncodedPassword = ""
     for Digit in Password:
