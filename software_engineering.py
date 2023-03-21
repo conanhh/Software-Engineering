@@ -1,4 +1,5 @@
 # This program constitutes a simplified password encoder/decoder.
+# Original developer: Conan Hooker Humphries
 
 def encode(Password):
     EncodedPassword = ""
