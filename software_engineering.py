@@ -2,6 +2,14 @@
 # Original developer: Conan Hooker Humphries
 
 def encode(Password):
+    """
+    Function to encode an 8-digit password in string format containing only integers.
+
+    * Parameter:
+        Password
+    * Return:
+        EncodedPassword
+    """
     EncodedPassword = ""
     for Digit in Password:
         NewDigit = int(Digit) + 3
@@ -13,6 +21,14 @@ def encode(Password):
 
 # Ian added decode function
 def decode(Password):
+    """
+    Function to decode an 8-digit password in string format containing only integers.
+
+    * Parameter:
+        Password
+    * Return:
+        DecodedPassword
+    """
     DecodedPassword = ""
     for Digit in Password:
         NewDigit = int(Digit) - 3
@@ -26,6 +42,7 @@ def main():
 
     while True:
 
+        # The menu is displayed.
         print("Menu")
         print("-------------")
         print("1. Encode")
@@ -36,12 +53,12 @@ def main():
 
         while Selection != 3:
 
-            if Selection == 1:
+            if Selection == 1:  # This selection encodes the password.
                 Password = input("Please enter your password to encode: ")
                 EncodedPassword = encode(Password)
                 print("Your password has been encoded and stored!\n")
                 break
-            elif Selection == 2:
+            elif Selection == 2:  # This selection decodes the password.
                 DecodedPassword = decode(EncodedPassword)
                 print(f"The encoded password is {EncodedPassword}, and the original password is {DecodedPassword}.\n")
                 break
