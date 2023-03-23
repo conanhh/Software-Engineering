@@ -3,17 +3,18 @@
 
 def encode(Password):
     EncodedPassword = ""
-    for Digit in password:
+    for Digit in Password:
         NewDigit = int(Digit) + 3
         if NewDigit > 9:
             NewDigit -= 10
         EncodedPassword += str(NewDigit)
     return EncodedPassword
 
-#Ian added decode function
-def decode(password):
+
+# Ian added decode function
+def decode(Password):
     DecodedPassword = ""
-    for Digit in password:
+    for Digit in Password:
         NewDigit = int(Digit) - 3
         if NewDigit < 0:
             NewDigit += 10
