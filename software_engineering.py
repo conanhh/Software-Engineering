@@ -19,7 +19,7 @@ def encode(Password):
     return EncodedPassword
 
 
-# Ian added decode function
+# Ian added the decode() function.
 def decode(Password):
     """
     Function to decode an 8-digit password in string format containing only integers.
